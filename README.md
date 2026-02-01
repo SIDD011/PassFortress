@@ -1,4 +1,5 @@
-# 🔐 Password Generator & Strength Checker
+# 🔐 PassFortress — Password Generator & Strength Checker
+
 
 A Python-based cybersecurity utility that generates secure random passwords and evaluates their strength using entropy calculations and estimated brute-force crack times.
 
