@@ -1,70 +1,58 @@
+# 🔐 Password Generator & Strength Checker
 
+A Python-based cybersecurity utility that generates secure random passwords and evaluates their strength using entropy calculations and estimated brute-force crack times.
 
-\# Password Generator \& Strength Checker 🔐
-
-
-
-A Python-based tool that generates secure random passwords and evaluates their strength using entropy and estimated brute-force crack times.
-
-
-
-\## 📌 Features
-
-\- Generate random passwords with:
-
-&nbsp; - Uppercase letters
-
-&nbsp; - Lowercase letters
-
-&nbsp; - Numbers
-
-&nbsp; - Symbols
-
-
-
---
-
-
-
-\- Calculate password entropy (bits)
-
-\- Classify strength:
-
-&nbsp; - Weak
-
-&nbsp; - Moderate
-
-&nbsp; - Strong
-
-&nbsp; - Very Strong
-
---
-
-\- Estimate crack time at:
-
-&nbsp; - 1e3 guesses/sec
-
-&nbsp; - 1e6 guesses/sec
-
-&nbsp; - 1e9 guesses/sec
-
-&nbsp; - 1e12 guesses/sec
-
-\- Save results to CSV file
-
-
+This project demonstrates practical understanding of password security, entropy concepts, and defensive security best practices.
 
 ---
 
+## 🎯 Project Objective
 
+- Generate strong random passwords  
+- Measure password entropy  
+- Classify password strength  
+- Estimate brute-force crack time at different attack speeds  
+- Save results to CSV for analysis  
 
-\## 📂 Project Structure
+---
 
+## 🛠 Tools & Technology
 
+- Python 3.x  
+- Standard Python Libraries  
+  - random  
+  - string  
+  - math  
+  - csv  
 
+---
 
+## 🔎 Features
 
+- Generate passwords using:
+  - Lowercase letters  
+  - Uppercase letters  
+  - Numbers  
+  - Symbols  
 
+- Calculate password entropy (bits)  
+- Strength classification:
+  - Weak  
+  - Moderate  
+  - Strong  
+  - Very Strong  
+
+- Crack-time estimation for:
+  - 1e3 guesses/sec  
+  - 1e6 guesses/sec  
+  - 1e9 guesses/sec  
+  - 1e12 guesses/sec  
+
+- Export results to CSV file  
+
+---
+
+## 📂 Project Structure
 
 Password-Generator/
 
@@ -72,107 +60,85 @@ Password-Generator/
 
 ├── src/
 
-│ └── password\_generator.py
+│ └── password_generator.py
 
 │
 
 ├── outputs/
 
-│ └── password\_strength\_results.csv
+│ └── password_strength_results.csv
 
 │
 
 └── README.md
 
-
-
-
+yaml
+Copy code
 
 ---
 
-
-
-\## ▶ How To Run
-
-
-
-
-
-
+## ▶ How To Run
 
 cd src
+python password_generator.py
 
-python password\_generator.py
-
-
-
-
+yaml
+Copy code
 
 Enter password length when prompted.
 
-
-
 ---
 
-
-
-\## 🛠 Requirements
-
-
-
-\- Python 3.x
-
-
-
-Check version:
-
-
-
-
-
-
-
-python --version
-
-
-
-
-
----
-
-
-
-\## 📊 Output Example
-
-
-
-
-
-
+## 📊 Sample Output
 
 Generated Password: mv!b^8YHc08F
-
 Entropy: 78.66
-
 Strength: Strong
 
-1e3/sec: 15143032414920 years
-
-1e6/sec: 15143032414 years
-
-1e9/sec: 15143032 years
-
+Crack Time Estimates:
+1e3/sec : 15143032414920 years
+1e6/sec : 15143032414 years
+1e9/sec : 15143032 years
 1e12/sec: 15143 years
 
+Saved to password_strength_results.csv
 
-
-
+yaml
+Copy code
 
 ---
 
+## 📄 Output File
 
+Results are saved in:
 
-\## 🚀 Author
+outputs/password_strength_results.csv
 
-Siddhesh Patil
+yaml
+Copy code
 
+This file contains:
+
+- Password  
+- Length  
+- Entropy  
+- Strength  
+- Crack-time estimates  
+
+---
+
+## 📚 Learning Outcomes
+
+- Understanding password entropy  
+- Secure password generation  
+- Brute-force attack concepts  
+- Python scripting for security automation  
+- Data logging using CSV  
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates practical defensive security skills related to password hygiene and cryptographic strength analysis, useful for SOC Analyst, Blue Team, and Cybersecurity Analyst roles.
+
+---
